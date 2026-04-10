@@ -97,7 +97,7 @@ export default function Signup() {
             formik={formik}
             name="email"
             label="Email"
-            placeholder="you@example.com"
+            placeholder="example@xyz.com"
             type="email"
           />
 
@@ -106,7 +106,7 @@ export default function Signup() {
             formik={formik}
             name="password"
             label="Password"
-            placeholder="••••••••"
+            placeholder="123456"
             type="password"
           />
 
@@ -115,7 +115,7 @@ export default function Signup() {
             formik={formik}
             name="confirmPassword"
             label="Confirm Password"
-            placeholder="••••••••"
+            placeholder="123456"
             type="password"
           />
 
