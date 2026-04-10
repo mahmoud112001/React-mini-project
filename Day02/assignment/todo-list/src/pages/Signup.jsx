@@ -21,7 +21,7 @@ const Field = ({ formik, name, label, type = "text", placeholder }) => (
         ${
           formik.touched[name] && formik.errors[name]
             ? "border-red-400 focus:ring-red-200"
-            : "border-gray-200 focus:ring-purple-300"
+            : "border-gray-200 focus:ring-green-300"
         }`}
     />
     {formik.touched[name] && formik.errors[name] && (
@@ -71,12 +71,12 @@ export default function Signup() {
   });
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-purple-50 to-indigo-100 flex items-center justify-center p-4">
+    <div className="min-h-screen bg-gradient-to-br from-green-50 to-emerald-100 flex items-center justify-center p-4">
       <div className="bg-white w-full max-w-md rounded-2xl shadow-lg p-8">
         {/* Header Section */}
         <div className="text-center mb-8">
-          <div className="w-14 h-14 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-3">
-            <i className="fa-solid fa-user-plus text-2xl text-purple-500"></i>
+          <div className="w-14 h-14 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-3">
+            <i className="fa-solid fa-user-plus text-2xl text-green-600"></i>
           </div>
           <h1 className="text-2xl font-bold text-gray-800">Create account</h1>
           <p className="text-gray-400 text-sm mt-1">Start managing your tasks</p>
@@ -89,7 +89,7 @@ export default function Signup() {
             formik={formik}
             name="name"
             label="Full Name"
-            placeholder="Ahmed Mohamed Amin"
+            placeholder="Mohamed Saleh"
           />
 
           {/* Email Field */}
@@ -122,7 +122,7 @@ export default function Signup() {
           {/* Submit Button */}
           <button
             type="submit"
-            className="w-full bg-purple-600 hover:bg-purple-700 text-white py-2.5 rounded-xl font-semibold text-sm transition-colors mt-2"
+            className="w-full bg-green-600 hover:bg-green-700 text-white py-2.5 rounded-xl font-semibold text-sm transition-colors mt-2"
           >
             Create Account
           </button>
@@ -133,7 +133,7 @@ export default function Signup() {
           Already have an account?{" "}
           <Link
             to="/login"
-            className="text-purple-600 font-medium hover:underline"
+            className="text-green-600 font-medium hover:underline"
           >
             Login
           </Link>

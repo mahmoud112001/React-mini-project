@@ -1,5 +1,4 @@
-import { useAuth } from "../context/useAuth";
- const { user } = useAuth();
+
 export default function Profile() {
   return (
     <div className="p-4 pb-24 max-w-md mx-auto">
@@ -9,8 +8,7 @@ export default function Profile() {
         <div className="w-16 h-16 rounded-full bg-green-100 border-2 border-green-500 flex items-center justify-center mb-2">
           <i className="fa-solid fa-user text-2xl text-green-600"></i>
         </div>
-        <p className="text-sm mt-1 text-green-100">Welcome Mr. {user?.name}  , Let's know about the Developer</p>
-        <h2 className="text-lg font-bold text-gray-800"> Eng. Mahmoud Awad Saad</h2>
+        <h2 className="text-lg font-bold text-gray-800">Mahmoud Awad Saad</h2>
         <p className="text-gray-500 text-xs">Full-Stack MEARN Developer</p>
       </div>
 
@@ -38,6 +36,7 @@ export default function Profile() {
         <p className="text-xs text-green-600 mt-0.5">
           Under supervision of <strong>Eng. Islam Baidaq</strong>
         </p>
+
       </div>
     </div>
   );

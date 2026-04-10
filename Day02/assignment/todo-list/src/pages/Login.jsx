@@ -30,12 +30,12 @@ export default function Login() {
   });
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-purple-50 to-indigo-100 flex items-center justify-center p-4">
+    <div className="min-h-screen bg-gradient-to-br from-green-50 to-emerald-100 flex items-center justify-center p-4">
       <div className="bg-white w-full max-w-md rounded-2xl shadow-lg p-8">
         {/* Header Section */}
         <div className="text-center mb-8">
-          <div className="w-14 h-14 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-3">
-            <i className="fa-solid fa-lock text-2xl text-purple-500"></i>
+          <div className="w-14 h-14 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-3">
+            <i className="fa-solid fa-lock text-2xl text-green-600"></i>
           </div>
           <h1 className="text-2xl font-bold text-gray-800">Welcome back</h1>
           <p className="text-gray-400 text-sm mt-1">Login to your account</p>
@@ -59,7 +59,7 @@ export default function Login() {
                 ${
                   formik.touched.email && formik.errors.email
                     ? "border-red-400 focus:ring-red-200"
-                    : "border-gray-200 focus:ring-purple-300"
+                    : "border-gray-200 focus:ring-green-300"
                 }`}
             />
             {formik.touched.email && formik.errors.email && (
@@ -86,7 +86,7 @@ export default function Login() {
                 ${
                   formik.touched.password && formik.errors.password
                     ? "border-red-400 focus:ring-red-200"
-                    : "border-gray-200 focus:ring-purple-300"
+                    : "border-gray-200 focus:ring-green-300"
                 }`}
             />
             {formik.touched.password && formik.errors.password && (
@@ -100,7 +100,7 @@ export default function Login() {
           {/* Submit Button */}
           <button
             type="submit"
-            className="w-full bg-purple-600 hover:bg-purple-700 text-white py-2.5 rounded-xl font-semibold text-sm transition-colors"
+            className="w-full bg-green-600 hover:bg-green-700 text-white py-2.5 rounded-xl font-semibold text-sm transition-colors"
           >
             Login
           </button>
@@ -111,7 +111,7 @@ export default function Login() {
           Don&apos;t have an account?{" "}
           <Link
             to="/signup"
-            className="text-purple-600 font-medium hover:underline"
+            className="text-green-600 font-medium hover:underline"
           >
             Sign up
           </Link>
