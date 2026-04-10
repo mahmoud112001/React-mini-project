@@ -1,6 +1,8 @@
 import { Link } from "react-router-dom";
+import { useAuth } from "../context/useAuth";
 
 export default function Home({ tasks }) {
+  const { user } = useAuth();
   const completed = tasks.filter((t) => t.completed).length;
   const active    = tasks.filter((t) => !t.completed).length;
   const percent   = tasks.length === 0 ? 0 : Math.round((completed / tasks.length) * 100);
@@ -10,7 +12,7 @@ export default function Home({ tasks }) {
 
       <div className="mt-6 mb-6 bg-green-600 text-white rounded p-4">
         <h1 className="text-xl font-bold">Hello 👋</h1>
-        <p className="text-sm mt-1 text-green-100">Welcome back, Mahmoud Awad</p>
+        <p className="text-sm mt-1 text-green-100">Welcome to {user?.name}</p>
       </div>
 
       {/* Progress */}
