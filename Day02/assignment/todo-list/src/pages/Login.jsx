@@ -51,7 +51,7 @@ export default function Login() {
             <input
               type="email"
               name="email"
-              placeholder="you@example.com"
+              placeholder="example@xyz.com"
               onChange={formik.handleChange}
               onBlur={formik.handleBlur}
               value={formik.values.email}
