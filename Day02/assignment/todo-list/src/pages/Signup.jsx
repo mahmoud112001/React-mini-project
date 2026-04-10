@@ -89,7 +89,7 @@ export default function Signup() {
             formik={formik}
             name="name"
             label="Full Name"
-            placeholder="Mohamed Saleh"
+            placeholder="Enter Your Name"
           />
 
           {/* Email Field */}
