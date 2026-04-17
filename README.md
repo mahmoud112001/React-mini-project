@@ -9,6 +9,7 @@
 
 ## 📌 Description
 
+
 A mobile-first **Todo List** with a complete **Authentication System** built with **React 19**, **React Router v7**, **Formik**, **Yup**, and **Tailwind CSS v4**.
 
 Built as a practical assignment during the React module at ITI, focusing on:
